@@ -1,0 +1,31 @@
+{
+  "observed_on": "2026-09-15",
+  "source": "unsigned Coinbase x402 POST challenge",
+  "checkout_url": "https://payments.coinbase.com/payment-sessions/paymentSession_20316d65-a8dd-47bd-ad2d-9e595f080293",
+  "challenge_sha256": "12314af7c4ffa5c2c7108e80ee911ea9b1dfedf9663074a80bed375e806e1ef1",
+  "note": "Requirements extracted unchanged. Full challenge including untrusted hint extension is not stored here; hash refers to original decoded challenge, not this file. Observation only, not payment approval.",
+  "requirements": {
+    "scheme": "auth-capture",
+    "network": "eip155:8453",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "amount": "10500000",
+    "payTo": "0x4C3f2E391498e2590bd327a7A1CAA68Dd42c4647",
+    "maxTimeoutSeconds": 3600,
+    "extra": {
+      "assetTransferMethod": "eip3009",
+      "captureAuthorizer": "0x00f8D7a519c70bF71D411E4bd89bF6d7e3065835",
+      "captureDeadline": 1821005089,
+      "feeRecipient": "0x6D8675A52438849d90241cB639fba41bDC3329c8",
+      "maxFeeBps": 100,
+      "minFeeBps": 100,
+      "name": "USD Coin",
+      "refundDeadline": 1821005089,
+      "tokenCollector": "0x0E3dF9510de65469C4518D7843919c0b8C7A7757",
+      "version": "2"
+    }
+  },
+  "payment_authorized": false,
+  "signatures_created": 0,
+  "transactions_sent": 0,
+  "worker_started": false
+}

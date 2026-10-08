@@ -1,0 +1,10 @@
+[Unit]
+Description=Refresh kwod production cost observation
+
+[Timer]
+OnBootSec=45
+OnUnitInactiveSec=60
+Persistent=true
+
+[Install]
+WantedBy=timers.target

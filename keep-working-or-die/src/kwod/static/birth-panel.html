@@ -1,0 +1,26 @@
+<section style="border-top:1px solid #171717;padding:24px 0" aria-labelledby="birth-control-title">
+<h2 id="birth-control-title">Birth freigeben</h2>
+<p>Geschützter Operatorzugang. Der Start ist einmalig und verbraucht anschließend das eigene Modellbudget des Agenten.</p>
+<p id="birth-control-status" role="status">Voraussetzungen werden geprüft.</p>
+<p id="birth-action-result" role="status"></p>
+<ul id="birth-blockers"></ul>
+<p id="birth-start-warning">Start ohne finanziertes Wallet. Der Nachladeweg zu OpenRouter ist noch ungeprüft.</p>
+<button id="birth-preview" disabled>Erbe prüfen und Birth vorbereiten</button>
+<div id="birth-confirmation" hidden>
+<p id="birth-credit-amount"></p>
+<p>Mit dem nächsten Klick wird Birth dauerhaft gespeichert und Astra gestartet. Der Agent schaut sich zuerst um und schreibt dir anschließend seine Orientierungsmail.</p>
+<label><input type="checkbox" id="birth-consent"> Ich will den Agenten jetzt aufwecken.</label>
+<p><button id="birth-trigger" disabled>Birth jetzt auslösen</button> <button id="birth-cancel">Abbrechen</button></p>
+</div>
+</section>
+<script>
+(()=>{let csrf='',preview=null,busy=false;const el=id=>document.getElementById(id);
+async function post(path,data){const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json','X-KWOD-CSRF':csrf},body:JSON.stringify(data||{})});const value=await r.json();if(!r.ok)throw Error(value.detail||'Aktion nicht bestätigt.');return value;}
+async function refresh(){if(busy)return;try{const r=await fetch('/operator/status',{cache:'no-store'});if(!r.ok)throw Error('Operatorstatus nicht erreichbar.');const s=await r.json();csrf=s.csrf;el('birth-preview').disabled=!s.ready;el('birth-control-status').textContent=s.born_at?'Geboren · '+new Date(s.born_at).toLocaleString('de-DE')+' · Worker: '+s.worker_state:s.ready?'Vorbereitung geprüft. Erbe muss vor der Bestätigung frisch gelesen werden.':'Birth gesperrt.';el('birth-blockers').replaceChildren(...s.blockers.map(text=>{const li=document.createElement('li');li.textContent=text;return li;}));if(s.born_at){el('birth-confirmation').hidden=true;preview=null;}}catch(e){el('birth-preview').disabled=true;el('birth-control-status').textContent=e.message;}}
+el('birth-preview').onclick=async()=>{busy=true;el('birth-preview').disabled=true;el('birth-action-result').textContent='';try{preview=await post('/operator/preview');const identity=preview.preview_id;el('birth-credit-amount').textContent='Bestätigtes Erbe: '+(preview.amount_micro/1000000).toLocaleString('de-DE',{maximumFractionDigits:6})+' USD OpenRouter-Credits. Kein EUR-Bargeld. Bestätigung gilt 60 Sekunden.';el('birth-consent').checked=false;el('birth-trigger').disabled=true;el('birth-confirmation').hidden=false;setTimeout(()=>{if(!busy&&preview&&preview.preview_id===identity){preview=null;el('birth-confirmation').hidden=true;refresh();}},60000);}catch(e){el('birth-action-result').textContent=e.message;}finally{busy=false;}};
+el('birth-consent').onchange=()=>{el('birth-trigger').disabled=!el('birth-consent').checked||!preview;};
+el('birth-cancel').onclick=()=>{preview=null;el('birth-confirmation').hidden=true;refresh();};
+el('birth-trigger').onclick=async()=>{if(busy||!preview||!el('birth-consent').checked)return;busy=true;el('birth-trigger').disabled=true;const chosen=preview;preview=null;try{const s=await post('/operator/birth',{preview_id:chosen.preview_id,confirmation:'BIRTH'});el('birth-action-result').textContent=s.worker_started?'Birth gespeichert · Astra gestartet.':s.message;el('birth-confirmation').hidden=true;}catch(e){el('birth-action-result').textContent=e.message;el('birth-confirmation').hidden=true;}finally{busy=false;setTimeout(refresh,3000);}};
+refresh();setInterval(refresh,15000);
+})();
+</script>

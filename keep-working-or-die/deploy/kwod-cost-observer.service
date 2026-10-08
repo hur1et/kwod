@@ -1,0 +1,21 @@
+[Unit]
+Description=kwod redacted production cost observation
+ConditionPathExists=/var/lib/kwod-production/private/state.sqlite
+ConditionPathExists=!/etc/kwod-safety/STOP
+ConditionPathExists=!/etc/kwod-safety/WATCHDOG_PAUSE
+
+[Service]
+Type=oneshot
+User=kwod-runtime
+Group=kwod-workspace
+ExecStart=/opt/kwod/current/.venv/bin/python /opt/kwod/current/deploy/observe_production_costs.py
+NoNewPrivileges=true
+PrivateNetwork=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+# SQLite WAL mode needs the runtime user to open/create its transient -wal/-shm
+# companions. The observer performs only SELECTs; its only intentional output is
+# the separate redacted costs.json in public/.
+ReadWritePaths=/var/lib/kwod-production/private /var/lib/kwod-production/public
+UMask=0077

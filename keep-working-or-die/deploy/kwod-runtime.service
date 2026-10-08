@@ -1,0 +1,25 @@
+[Unit]
+Description=KEEP WORKING OR DIE development worker
+After=network-online.target docker.service
+ConditionPathExists=/etc/kwod/development.env
+ConditionPathExists=!/etc/kwod-safety/STOP
+ConditionPathExists=!/etc/kwod-safety/WATCHDOG_PAUSE
+
+[Service]
+Type=simple
+User=kwod-runtime
+Group=kwod-workspace
+EnvironmentFile=/etc/kwod/development.env
+ExecStart=/opt/kwod/current/.venv/bin/kwod --data /var/lib/kwod run --openai-dev --forever
+Restart=on-failure
+RestartSec=30
+TimeoutStopSec=180
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/kwod
+
+[Install]
+WantedBy=multi-user.target

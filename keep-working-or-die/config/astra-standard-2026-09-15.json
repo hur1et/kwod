@@ -1,0 +1,18 @@
+{
+  "id": "astra-standard-usd-2026-09-15",
+  "valid_from": "2026-09-15T00:00:00Z",
+  "currency": "USD",
+  "source_url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "tariff": {
+    "verified": true,
+    "input": "10",
+    "cached": "1",
+    "cache_write": "12.5",
+    "output": "50",
+    "cache_write_field": "cache_write_tokens",
+    "cache_writes_in_input": true,
+    "missing_writes_means_zero": false,
+    "max_input_tokens": 272000,
+    "mapping_evidence": "Official Responses Python API reference fetched 2026-09-15; OpenAI SDK 3.13.0 response_usage.InputTokensDetails identifies cache_write_tokens as input tokens written to cache. Standard service tier only. https://developers.openai.com/api/reference/python/resources/responses/methods/create"
+  }
+}

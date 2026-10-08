@@ -1,0 +1,14 @@
+.................................... [ 23%]
+..........ss............................ [ 49%]
+..............................................................................               [100%]
+============================== warnings summary ===============================
+..\.venv\Lib\site-packages\starlette\testclient.py:53
+  C:\workspace\projects\keepworkingordie\.venv\Lib\site-packages\starlette\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_auth_capture_crypto.py:8: eth-account exists on Ubuntu signer, not local development environment
+SKIPPED [1] tests\test_linux_executor.py:29: requires Linux, Docker and explicit isolation-test opt-in
+SKIPPED [1] tests\test_linux_executor.py:54: requires Linux, Docker and explicit isolation-test opt-in
+152 passed, 3 skipped, 1 warning, 120 subtests passed in 19.49s

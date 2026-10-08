@@ -1,0 +1,28 @@
+[Unit]
+Description=KWOD independent safety observer without strategy or network
+ConditionPathExists=!/etc/kwod-safety/STOP
+Before=kwod-runtime.service
+
+[Service]
+User=root
+Group=kwod-payments
+SupplementaryGroups=kwod-public
+ExecStart=/opt/kwod/current/.venv/bin/python -m kwod.watchdog
+RuntimeDirectory=kwod-watchdog
+RuntimeDirectoryMode=0750
+Restart=on-failure
+NoNewPrivileges=true
+PrivateNetwork=true
+RestrictAddressFamilies=AF_UNIX
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+CapabilityBoundingSet=CAP_CHOWN
+ReadWritePaths=/etc/kwod-safety /var/lib/kwod-safety /var/lib/kwod/public/safety
+InaccessiblePaths=-/etc/kwod-mail -/etc/kwod-openrouter /var/lib/kwod/private -/var/lib/kwod-signer
+MemoryMax=128M
+TasksMax=8
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

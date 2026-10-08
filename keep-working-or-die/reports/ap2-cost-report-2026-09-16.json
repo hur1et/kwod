@@ -1,0 +1,35 @@
+{
+  "currency": "USD",
+  "runs": [
+    {
+      "id": "kwod-work-trial-01",
+      "cost": "0.09",
+      "successful_attempts": 5,
+      "rejected_attempts": 1,
+      "cost_source": "user_report_in_conversation",
+      "verification": "user_reported_not_independently_verified",
+      "per_attempt_cost": null
+    },
+    {
+      "id": "pilot02",
+      "cost": "0.31",
+      "successful_attempts": 5,
+      "rejected_attempts": null,
+      "cost_source": "user_report_in_conversation",
+      "verification": "not_independently_verified",
+      "attribution_condition": "No other account consumption or adjustments during the interval",
+      "per_attempt_cost": null
+    }
+  ],
+  "combined_observed_cost": "0.40",
+  "account_balance_after_pilot": "39.60",
+  "provider_usage": {
+    "status": "unknown",
+    "reason": "no independently retrieved per-attempt usage"
+  },
+  "eur_conversion": null,
+  "ledger_debit_created": false,
+  "double_debit_protection": "balance delta is an observation; no ledger debit is created",
+  "generated_by": "kwod.cost_report.summarize",
+  "generated_on": "2026-09-16"
+}

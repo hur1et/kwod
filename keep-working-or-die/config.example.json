@@ -1,0 +1,17 @@
+{
+  "mode": "dev",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "max_output_tokens": 4096,
+  "target_context_tokens": 24000,
+  "sdk_max_retries": 0,
+  "public_bind": "127.0.0.1",
+  "public_poll_seconds": 10,
+  "executor_network": false,
+  "terminal_timeout_seconds": 120,
+  "tool_model_view_bytes": 65536,
+  "production_birth_enabled": false,
+  "openai_key_source": "runtime-only environment; never executor",
+  "price_table": "verify and version before real use",
+  "birth_evidence": null
+}

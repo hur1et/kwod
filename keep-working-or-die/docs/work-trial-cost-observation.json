@@ -1,0 +1,16 @@
+{
+  "observed_on": "2026-09-16",
+  "trial": "kwod-work-trial-01",
+  "source": "user_report_in_conversation",
+  "verification": "user_reported_not_independently_verified",
+  "currency": "USD",
+  "reported_total_micro": 90000,
+  "reported_total_decimal": "0.09",
+  "successful_model_attempts": 5,
+  "rejected_model_attempts": 1,
+  "derived_average_per_successful_attempt_decimal": "0.018",
+  "scope_note": "User reports $0.09 for the existing trial. No per-attempt charge allocation or charge for the rejected request is established.",
+  "eur_conversion": null,
+  "remaining_account_balance": null,
+  "ledger_debit_created": false
+}

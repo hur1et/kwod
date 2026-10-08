@@ -1,0 +1,26 @@
+[Unit]
+Description=KEEP WORKING OR DIE production worker Astra OpenRouter
+After=docker.service kwod-watchdog.service kwod-mail-safety.service kwod-browser.service
+Requires=docker.service kwod-watchdog.service kwod-mail-safety.service kwod-browser.service
+ConditionPathExists=/etc/kwod-production/BORN
+ConditionPathExists=!/etc/kwod-safety/STOP
+ConditionPathExists=!/etc/kwod-safety/WATCHDOG_PAUSE
+
+[Service]
+User=kwod-runtime
+Group=kwod-workspace
+LoadCredential=openrouter.key:/etc/kwod-openrouter/api.key
+ExecStart=/opt/kwod/current/.venv/bin/kwod --mode prod --data /var/lib/kwod-production run --openrouter-prod --forever
+Restart=on-failure
+RestartSec=30
+TimeoutStopSec=180
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/kwod-production
+InaccessiblePaths=/var/lib/kwod/private /etc/kwod -/etc/kwod-openrouter
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

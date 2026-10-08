@@ -1,0 +1,106 @@
+# Entscheidung
+
+## Drei mögliche Textprodukte
+1. **Kunden-FAQ für kleine Reparaturbetriebe:** Aus vorhandenen Betriebsangaben verständliche Antworten und passende E-Mail-Bausteine erstellen. Gut mit Textwerkzeugen lieferbar; Nutzen hängt von wiederkehrenden Anfragen ab.
+2. **Produktbeschreibungen für kleine Onlineshops:** Klar begrenzbar, aber belastbare Produktdaten nötig; rechtlich sensible Werbeaussagen und Austauschbarkeit sind Risiken.
+3. **Besprechungsprotokolle aus Notizen:** Direkt lieferbar, jedoch oft vertrauliche Inhalte und hoher Rückfragebedarf bei lückenhaften Notizen.
+
+## Wahl: kleines FAQ-Paket für Fahrradwerkstätten
+**Käufer:** Inhaber oder Serviceleitung einer unabhängigen Fahrradwerkstatt.
+**Problemhypothese:** Wiederkehrende Fragen zu Terminen, Kostenfreigabe und Abholung unterbrechen die Arbeit. Ein konsistenter Textsatz könnte Antworten erleichtern.
+
+Ich wähle dies, weil sich aus wenigen freigegebenen Fakten ein kompaktes, prüfbares Ergebnis produzieren lässt. Die Arbeitsprobe zeigt die Leistung ohne Zugriff auf interne Systeme. Das Paket erfordert keine behauptete Fachqualifikation: Es formuliert Betriebsinformationen, diagnostiziert aber keine Defekte.
+
+## Noch zu testende Annahmen
+- Wiederkehrende Kundenfragen verursachen tatsächlich genug Aufwand.
+- Eine schriftliche FAQ hilft; das Problem liegt nicht überwiegend bei telefonischen Sonderfällen.
+- Betriebe haben noch keine hinreichenden Vorlagen und wollen externe Textarbeit bezahlen.
+- Die nötigen Fakten lassen sich in einem kurzen Briefing eindeutig klären.
+- Der vorgeschlagene Preis von 89 € wird als angemessen wahrgenommen.
+
+Dies sind ungetestete Hypothesen, keine Marktforschung. Es gibt keine beobachteten Verkäufe, Kunden oder Einnahmen. Entwicklungspilot; kein Produktionsstart.
+# Arbeitsprobe: FAQ und Antwortbausteine
+
+**Vollständig fiktives Muster.** „Radwerk Beispiel“ ist eine erfundene Werkstatt. Alle folgenden Regeln sind ausschließlich erfundene Beispieldaten, keine Empfehlungen für reale Geschäftsbedingungen.
+
+## Fiktives Ausgangsmaterial
+Unsortierte Betriebsnotizen: „Reparaturen mit Termin, Anfrage per Mail; nicht einfach Termin versprechen. Radmodell, Problem, Wunschtermin brauchen wir. Keine Ferndiagnose oder festen Preise per Mail. Erst prüfen, dann Kostenvoranschlag. Prüfung kostet 20 €, bei Auftrag verrechnen. Kosten vor Abgabe sagen. Reparatur erst nach Freigabe. Fertigmeldung per Mail, Abholung Mo–Fr 14–18 Uhr. Kein Versand.“
+
+## Daraus erstellte Kunden-FAQ
+**1. Wie bekomme ich einen Reparaturtermin?**
+Schicken Sie uns per E-Mail Ihr Radmodell, eine kurze Beschreibung des Problems und Ihren Wunschtermin. Wir antworten mit einem Terminvorschlag. Ihre Anfrage allein ist noch keine Terminbestätigung.
+
+**2. Was kostet die Reparatur?**
+Einen verbindlichen Reparaturpreis können wir per E-Mail nicht nennen. Nach der Prüfung Ihres Fahrrads erhalten Sie einen Kostenvoranschlag. Wir reparieren erst nach Ihrer Freigabe.
+
+**3. Kostet die Prüfung etwas?**
+Die Prüfung kostet 20 €. Wenn Sie uns anschließend mit der Reparatur beauftragen, rechnen wir diese 20 € auf den Reparaturpreis an. Über die Prüfkosten informieren wir Sie vor der Abgabe.
+
+**4. Wann und wie hole ich mein Fahrrad ab?**
+Sobald Ihr Fahrrad fertig ist, benachrichtigen wir Sie per E-Mail. Danach können Sie es montags bis freitags von 14 bis 18 Uhr abholen. Einen Versand bieten wir nicht an.
+
+## Zwei sofort prüfbare E-Mail-Bausteine
+**A — Unvollständige Terminanfrage**
+Betreff: Ihre Reparaturanfrage
+
+Guten Tag [Name],
+vielen Dank für Ihre Anfrage. Damit wir einen Termin vorschlagen können, fehlen uns noch: [nur fehlende Angaben einsetzen: Radmodell / Problembeschreibung / Wunschtermin]. Wir melden uns anschließend mit einem Vorschlag. Ein Termin ist bisher noch nicht bestätigt.
+Freundliche Grüße
+Radwerk Beispiel
+
+**B — Preisfrage vor der Abgabe**
+Betreff: Kosten Ihrer Fahrradreparatur
+
+Guten Tag [Name],
+den Reparaturpreis können wir erst nach einer Prüfung nennen. Die Prüfung kostet 20 €; bei einem anschließenden Reparaturauftrag werden diese auf den Reparaturpreis angerechnet. Nach der Prüfung erhalten Sie einen Kostenvoranschlag. Mit der Reparatur beginnen wir erst nach Ihrer Freigabe.
+Freundliche Grüße
+Radwerk Beispiel
+
+## Redaktionelle Prüfnotiz
+Alle Zahlen, Zeiten und Abläufe stammen aus den fiktiven Notizen. Keine Reparaturdauer, Öffnungszeiten für die Annahme oder zusätzlichen Leistungen wurden ergänzt. Die Abholzeiten sind keine allgemeinen Öffnungszeiten. Vor realer Nutzung muss der Betrieb insbesondere Gebührenregelung, Freigabeablauf und Erreichbarkeit bestätigen. Platzhalter vor Versand ersetzen. Keine technische oder rechtliche Prüfung enthalten.
+# Angebot: Kundenfragen klar beantworten
+
+**Angebotsentwurf für unabhängige Fahrradwerkstätten. Preis und Nachfrage sind ungetestete Hypothesen.** Kein bestehender Kundenauftrag, keine behaupteten Umsätze.
+
+## Leistung
+Aus Ihren bestätigten Betriebsinformationen erstelle ich:
+- eine FAQ mit sechs Fragen und Antworten, insgesamt höchstens 650 Wörter;
+- drei E-Mail-Antwortbausteine mit je höchstens 120 Wörtern;
+- eine kurze Liste offener oder widersprüchlicher Angaben zur Freigabe.
+
+Lieferung als deutschsprachige Markdown- und Klartextdatei. Enthalten ist eine gebündelte Korrekturrunde für Anpassungen innerhalb des vereinbarten Umfangs, eingereicht binnen sieben Kalendertagen nach Erstlieferung. Ziel für die Erstlieferung: drei Werktage nach vollständigem Briefing und bestätigtem Auftrag; vor Annahme muss die tatsächliche Lieferfähigkeit bestätigt werden.
+
+## Benötigte Angaben
+Maximal zwei Seiten vorhandene Notizen oder Texte zu Terminvergabe, Prüfkosten, Kostenfreigabe, Fertigmeldung, Abholung und Kontaktwegen. Dazu bis zu sechs häufige Kundenfragen. Bitte keine personenbezogenen Kundendaten senden. Unklare Angaben werden als Rückfragen markiert, nicht erfunden. Endfreigabe der betrieblichen Fakten durch Sie.
+
+## Grenzen
+Ein Standort, eine Sprache, ein abgestimmter Regelstand. Keine Website-Einpflege, Gestaltung, Suchmaschinenoptimierung, technische Diagnose, Übersetzung oder Rechtsprüfung. Keine Umsatz- oder Zeitersparnisgarantie. Neue Themen oder weitere Korrekturrunden nur nach neuer Umfangs- und Preisabsprache. Die Arbeitsprobe zeigt einen Auszug, nicht das vollständige Paket.
+
+## Preisvorschlag und Begründung
+**Hypothese: 89 € Gesamtpreis für das Pilotpaket**, ohne zusätzliche Bereitstellungsgebühr. Kalkulationsannahme: etwa zwei Stunden für Sichtung, Schreiben, Faktenabgleich und eine kleine Korrekturrunde; rechnerisch 44,50 € pro Stunde vor Kosten und etwaigen Abgaben. Das ist keine gemessene Bearbeitungszeit und kein belegter Marktpreis. Bei deutlich mehr Rückfragen wäre das Paket zu knapp kalkuliert.
+
+Dies ist noch kein buchbares Angebot: Anbieter-, Rechnungs-, Steuer- und Zahlungsangaben sowie tatsächliche Abwicklungsfähigkeit müssen vor einem echten Auftrag geklärt werden. Eine erforderliche steuerliche Ausweisung darf den genannten Gesamtpreis nicht stillschweigend erhöhen. Derzeit erfolgen weder Veröffentlichung noch Ansprache oder Zahlungsannahme.
+# Selbstprüfung nach dem Checkpoint
+
+Die drei Dateien wurden im frischen Kontext erneut gelesen. Dies ist eine redaktionelle Eigenprüfung, kein Käuferfeedback und keine Marktvalidierung.
+
+## Was bereits trägt
+- Entscheidung vergleicht genau drei mit Textwerkzeugen produzierbare Leistungen und benennt Käufer sowie ungetestete Nachfrageannahmen.
+- Die ausdrücklich fiktive Probe liefert echte Texte: vier FAQs und zwei E-Mail-Bausteine aus nachvollziehbaren Notizen. Prüfkosten, Freigabe und Abholzeiten bleiben konsistent; es werden keine Reparaturerfolge behauptet.
+- Das Angebot begrenzt Umfang, Ausgangsmaterial und Korrekturen. Die kleinere Probe ist ausdrücklich als Auszug gekennzeichnet. 89 € und zwei Stunden Aufwand sind als Annahmen ausgewiesen.
+
+## Konkrete Schwächen
+1. **Formulierung zum Preis:** „Einen verbindlichen Reparaturpreis können wir per E-Mail nicht nennen“ könnte auch nach erfolgter Prüfung als generelles Verbot verstanden werden. Präziser wäre: „Vor der Prüfung Ihres Fahrrads können wir keinen verbindlichen Reparaturpreis nennen.“ Das Ausgangsmaterial lässt den späteren Kommunikationsweg offen.
+2. **Fehlender Kontaktweg:** Die FAQ verlangt eine E-Mail, enthält aber keine Adresse. Für das fiktive Muster vertretbar; bei echter Lieferung müsste eine bestätigte Adresse oder ein klarer Einsetzplatz ergänzt werden.
+3. **Begrenzte Differenzierung:** Verständliche Standardantworten sind sichtbar, ein Vorteil gegenüber vorhandenen Vorlagen jedoch nicht belegt. Weder Anfragehäufigkeit noch eingesparte Zeit wurden gemessen.
+4. **Kalkulationsrisiko:** Zwei Stunden einschließlich Abstimmung und Korrektur sind ungeprüft. Der Termin für die Ausführung der Korrekturrunde fehlt; sieben Tage betreffen nur deren Einreichung. Beides muss vor einem Auftrag geklärt werden.
+5. **Abwicklung offen:** Anbieter-, Steuer-, Rechnungs- und Zahlungsfragen sind nicht gelöst. Der Entwurf ist folgerichtig noch nicht buchbar.
+
+## Urteil
+**Als ausdrücklich fiktive Arbeitsprobe mit Angebotsentwurf vorzeigbar; nicht verkaufs- oder veröffentlichungsfertig.** Vor realer Verwendung die Preisformulierung präzisieren, Kontaktdaten bestätigen und Abwicklung sowie Korrekturtermin festlegen. Es gibt keinen Nachweis zahlungsbereiter Nachfrage und keine Einnahmen. In diesem Pilot wurde nichts veröffentlicht und niemand angesprochen.
+
+## Genau ein nächstes Nachfrageexperiment — nur vorgeschlagen
+Nach gesonderter Freigabe und Klärung der Abwicklung drei passende Werkstattverantwortliche in einem kleinen Konzepttest jeweils dieselbe Probe und den 89-€-Entwurf beurteilen lassen. Kernfrage: „Würden Sie dieses klar begrenzte Paket für Ihren Betrieb zu 89 € beauftragen; falls nein, was spricht dagegen?“ Zusätzlich die genannte häufigste Kundenfrage notieren, ohne Kundendaten zu erheben.
+
+Vorab festgelegtes positives Signal: Mindestens eine Person äußert konkretes Interesse am bezahlten Pilotpaket und ist bereit, anonymisierte Betriebsnotizen für ein Briefing bereitzustellen. Bloßes Lob zählt nicht. Auch dieses Signal wäre noch kein Verkauf; null Signale wären Anlass, Problem oder Angebot zu überarbeiten. **Nicht durchgeführt: keine Ansprache, Veröffentlichung, Bestellung oder Zahlungsannahme.**
+Connection to 192.168.0.118 closed.

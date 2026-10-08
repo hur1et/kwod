@@ -1,0 +1,14 @@
+[Unit]
+Description=KWOD public internet boundary excluding LAN and host
+Requires=docker.service
+After=docker.service
+PartOf=docker.service
+Before=kwod-runtime.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/kwod/current/deploy/world_firewall.py
+RemainAfterExit=yes
+
+[Install]
+WantedBy=docker.service

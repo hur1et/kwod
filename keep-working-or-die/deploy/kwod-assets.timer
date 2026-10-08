@@ -1,0 +1,10 @@
+[Unit]
+Description=Refresh kwod resource observations every minute
+
+[Timer]
+OnBootSec=30
+OnUnitInactiveSec=60
+Unit=kwod-assets.service
+
+[Install]
+WantedBy=timers.target

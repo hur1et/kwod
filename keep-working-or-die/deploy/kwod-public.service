@@ -1,0 +1,16 @@
+[Unit]
+Description=KEEP WORKING OR DIE public read-only observer
+
+[Service]
+User=kwod-public
+Group=kwod-public
+ExecStart=/opt/kwod/current/.venv/bin/kwod serve --public-db /var/lib/kwod/public/public.sqlite
+Restart=on-failure
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+InaccessiblePaths=/var/lib/kwod/private /var/lib/kwod/workspace /etc/kwod -/etc/kwod-openrouter -/var/lib/kwod-work-trial-01 -/var/lib/kwod-work-pilot-02 -/var/lib/kwod-work-monitor-check
+
+[Install]
+WantedBy=multi-user.target

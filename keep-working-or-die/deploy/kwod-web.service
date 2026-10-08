@@ -1,0 +1,22 @@
+[Unit]
+Description=KWOD agent static website and files
+After=network.target
+ConditionPathExists=!/etc/kwod-safety/STOP
+ConditionPathExists=!/etc/kwod-safety/WATCHDOG_PAUSE
+
+[Service]
+User=kwod-public
+Group=kwod-public
+ExecStart=/opt/kwod/current/.venv/bin/python -m kwod.web_hosting --root /var/lib/kwod/public/website
+Restart=on-failure
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+RestrictAddressFamilies=AF_INET AF_UNIX
+MemoryMax=256M
+TasksMax=64
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

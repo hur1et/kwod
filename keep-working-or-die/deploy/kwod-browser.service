@@ -1,0 +1,31 @@
+[Unit]
+Description=KWOD controlled read only HTTPS browser gateway
+After=network-online.target kwod-watchdog.service kwod-browser-firewall.service
+Requires=kwod-watchdog.service
+BindsTo=kwod-browser-firewall.service
+ConditionPathExists=/etc/kwod-safety/BROWSER_ENABLED
+ConditionPathExists=!/etc/kwod-safety/STOP
+ConditionPathExists=!/etc/kwod-safety/WATCHDOG_PAUSE
+
+[Service]
+User=kwod-browser
+Group=kwod-workspace
+SupplementaryGroups=kwod-payments
+ExecStart=/opt/kwod/current/.venv/bin/python -m kwod.browser_gateway
+RuntimeDirectory=kwod-browser
+RuntimeDirectoryMode=0750
+Restart=on-failure
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+CapabilityBoundingSet=
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+InaccessiblePaths=-/etc/kwod-mail -/etc/kwod-openrouter /var/lib/kwod/private -/var/lib/kwod-signer -/var/lib/kwod/workspace -/var/lib/kwod/agent-home
+MemoryMax=256M
+TasksMax=16
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

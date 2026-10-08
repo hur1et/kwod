@@ -1,0 +1,12 @@
+[Unit]
+Description=KWOD host owned browser egress firewall
+After=network-online.target
+Before=kwod-browser.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/kwod/current/deploy/browser_firewall.py
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

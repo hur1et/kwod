@@ -1,0 +1,11 @@
+{
+  "mode": "offline_fixture",
+  "elapsed_seconds": 14.12,
+  "requested_seconds": 12.0,
+  "ticks_with_store_reopen": 82,
+  "model_fixture_attempts": 7,
+  "private_events": 71,
+  "backup_restore_verified": true,
+  "production_birth": false,
+  "real_api_calls": 0
+}

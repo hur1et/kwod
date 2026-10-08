@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fixture-write-1", "model": "gpt-6-astra", "status": "completed", "usage": null,
+    "output": [
+      {"type": "function_call", "call_id": "fixture-write", "name": "write_file", "arguments": "{\"path\":\"memory.md\",\"content\":\"Offline development fixture completed. No production birth or real spend.\"}"}
+    ]
+  },
+  {
+    "id": "fixture-finish-2", "model": "gpt-6-astra", "status": "completed", "usage": null,
+    "output": [{"type": "message", "role": "assistant", "content": [{"type": "output_text", "text": "Offline development note saved."}]}]
+  }
+]

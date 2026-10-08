@@ -1,0 +1,29 @@
+[Unit]
+Description=KWOD authenticated loopback operator birth control
+After=kwod-public.service
+Requires=kwod-public.service
+ConditionPathExists=/etc/kwod-production/operator-password.json
+
+[Service]
+User=root
+ExecStart=/opt/kwod/current/.venv/bin/python -m kwod.operator
+Restart=on-failure
+RestartSec=5
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/etc/kwod-production /var/lib/kwod-production
+NoNewPrivileges=true
+# Fixed helpers run as the database owner; keep only these identity-switch
+# capabilities ambient across executable boundaries, including worker threads.
+AmbientCapabilities=CAP_SETUID CAP_SETGID
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+PrivateDevices=true
+# Required by the read-only iptables/ip6tables hook checks during readiness.
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
+PrivateTmp=true
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

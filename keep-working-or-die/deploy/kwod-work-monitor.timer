@@ -1,0 +1,11 @@
+[Unit]
+Description=Refresh safe work-run metadata every five seconds
+
+[Timer]
+OnBootSec=5s
+OnUnitInactiveSec=5s
+AccuracySec=1s
+Unit=kwod-work-monitor.service
+
+[Install]
+WantedBy=timers.target

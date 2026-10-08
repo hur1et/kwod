@@ -1,0 +1,412 @@
+{
+  "version": "0.1.0.dev1",
+  "files": [
+    {
+      "path": "config/astra-standard-2026-09-15.json",
+      "sha256": "e002d7f0b9dfc3a9b342dc00160895a8f23d155f683f16533a2ddeafd035b938",
+      "bytes": 778
+    },
+    {
+      "path": "deploy/auth_capture_compare.py",
+      "sha256": "4970764e938998fb606599fe361e08882dba58247c1ef8ace1b0fc8609d42ff7",
+      "bytes": 5176
+    },
+    {
+      "path": "deploy/auth_capture_official.mjs",
+      "sha256": "b593659bdb4dbdc371b84fe8d16c9494db7d8f2969962582dc77256fd2aeb2bd",
+      "bytes": 1087
+    },
+    {
+      "path": "deploy/auth_capture_selftest.py",
+      "sha256": "1604e21029647e660e2105bc8b2d9c605a129df01ff5cefd150922af01128e4a",
+      "bytes": 5057
+    },
+    {
+      "path": "deploy/bundle.py",
+      "sha256": "04abb091152117339040a0295801790a739cf0a063f994a32eb30133d818578c",
+      "bytes": 2294
+    },
+    {
+      "path": "deploy/check_checkout.py",
+      "sha256": "f1429befcaf8eff965388c2e2bd60567aa54e1d40a3a53baa6b7da8dfd2da957",
+      "bytes": 4385
+    },
+    {
+      "path": "deploy/check_openrouter.py",
+      "sha256": "fbf4a522974cd99e08b366d7d571b3714fd6ee9565d083f95e32c2b3f01ae524",
+      "bytes": 4759
+    },
+    {
+      "path": "deploy/check_readiness.py",
+      "sha256": "8d6e88a1d0de96a62ed67765ec06c893af51810ff458edf55ec393c499b1c823",
+      "bytes": 7968
+    },
+    {
+      "path": "deploy/Check-Checkout.ps1",
+      "sha256": "d02a0518b8e4f77d6e1afae16f923827af0b47cedb080611e5df262f74674132",
+      "bytes": 1539
+    },
+    {
+      "path": "deploy/Check-Readiness.ps1",
+      "sha256": "55b59b0f1993efd59314224197722ea924a3c1e54b0b4947f257f3d234f53f7d",
+      "bytes": 1285
+    },
+    {
+      "path": "deploy/Connect-OpenRouter.ps1",
+      "sha256": "1d332899ef82b9335fbcac92e479ebf87b52d9e333973f8eb57bc208bfa5d2e4",
+      "bytes": 1503
+    },
+    {
+      "path": "deploy/Deploy-Ubuntu.ps1",
+      "sha256": "61ead63fa4d72a56c4c0cbbc00aa6f656e32b9d4b55e574ba6bc5d732e76064b",
+      "bytes": 3354
+    },
+    {
+      "path": "deploy/Executor.Dockerfile",
+      "sha256": "0c0fc6cd4ff9d75ca8d68b6eaf00f01787579841882182d34c925f9beaaa1e50",
+      "bytes": 81
+    },
+    {
+      "path": "deploy/install_signer.py",
+      "sha256": "6e3b89b6157d6deb95d322759b4782ee7fb5bfe87cb01a7fe59acbdae1d4e88f",
+      "bytes": 6638
+    },
+    {
+      "path": "deploy/install_ubuntu.py",
+      "sha256": "e9b3d3526c0511a6890017fc0def9947ea007ba7fa390bbff774ee2159f71219",
+      "bytes": 9565
+    },
+    {
+      "path": "deploy/install_wallet_runtime.py",
+      "sha256": "c879c3b45591ec8fb0a949046b81fffdeb99eff75d37c270b93eee1d91e0cb56",
+      "bytes": 4706
+    },
+    {
+      "path": "deploy/Install-Signer.ps1",
+      "sha256": "68bc915a1c5634ea386561f4e6adc45e9e2cd4677d8d4a881c5fd4aefd7fd6c3",
+      "bytes": 1848
+    },
+    {
+      "path": "deploy/Install-WalletRuntime.ps1",
+      "sha256": "6444888c4fa4a5deca4fac5c165f5cfd4396057905dbb59f60b1201521ef7e97",
+      "bytes": 1375
+    },
+    {
+      "path": "deploy/kwod-public.service",
+      "sha256": "956153562e6fc2fd80b0154ea4e9f0fcb9bdb814a925c1e85241b1f5d98208e0",
+      "bytes": 413
+    },
+    {
+      "path": "deploy/kwod-runtime.service",
+      "sha256": "62177268a88b9e22cb8ea33d1e85b0453cf5a5da9bfd924d812e4ded282cf939",
+      "bytes": 547
+    },
+    {
+      "path": "deploy/New-LocalWallet.ps1",
+      "sha256": "2364af00a79eaee25a6c71fab8940c14f55d36171618e3f7a188cb40a627d20b",
+      "bytes": 3461
+    },
+    {
+      "path": "deploy/record_deployment.py",
+      "sha256": "e78389015f18787c58c3a69fe20ce7dfc6befa94acd676c7f191aed48f77ffb4",
+      "bytes": 639
+    },
+    {
+      "path": "deploy/run_auth_capture_compare.py",
+      "sha256": "7f794754aebb2d2d2e742922f7b2fa220997e224795e244eddfe02e3558d8c6c",
+      "bytes": 3207
+    },
+    {
+      "path": "deploy/run_auth_capture_selftest.py",
+      "sha256": "aa8566d349679c87667a27f57ea2e9c022f87c1b548d44295565d933c72dd017",
+      "bytes": 1746
+    },
+    {
+      "path": "deploy/run_work_trial.py",
+      "sha256": "9566eaa2845a34ab40c8700a6c319e1369eba7c9f44b801aa41fd678cc4e04e0",
+      "bytes": 8150
+    },
+    {
+      "path": "deploy/setup_local_wallet.py",
+      "sha256": "a0586b5852ed4d23b9979a64e2553a0b49a9102bf5d6979f1b8be12e808745dc",
+      "bytes": 10315
+    },
+    {
+      "path": "deploy/Test-AuthCapture.ps1",
+      "sha256": "11cc64674506a3f8c8c56cb127b9da6f60eeb8c33663803c035b7d3695964d81",
+      "bytes": 3344
+    },
+    {
+      "path": "deploy/Test-WorkTrial.ps1",
+      "sha256": "7c5c69e2fd1d73c6e3167ebe0cfa775c1e94eabd45a4008170b946f4d1959bd7",
+      "bytes": 3733
+    },
+    {
+      "path": "deploy/Watch-Agent.ps1",
+      "sha256": "e9c3ea2f479088ec14a323f7f2c9746f9e8fe6a5b0b16648efdba59894bf1e01",
+      "bytes": 1036
+    },
+    {
+      "path": "docs/pilot-02-cost-observation.json",
+      "sha256": "392ad1632eb095c3281157f904cec099f7c0191fc6f423affa9b276c5b562cae",
+      "bytes": 559
+    },
+    {
+      "path": "docs/work-trial-cost-observation.json",
+      "sha256": "4566259da4fb3597b9313f1bd1c3accc4c47183d259b6b99837e966b268f2703",
+      "bytes": 631
+    },
+    {
+      "path": "fixtures/development.json",
+      "sha256": "7b7d722aaf2b38c4d28772d35ea0ecb3138d1e793f7462e525487616590c7834",
+      "bytes": 577
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "81afb744b1ee0a9cfa4a68031261678c4b446538f44751e9971aaa10611e6c9c",
+      "bytes": 610
+    },
+    {
+      "path": "reports/pilot-02/originalausgabe.txt",
+      "sha256": "10a98c96258f4ba4a2a185b9325d0274ecb5266f1f7a6adfadd0b2543751b34a",
+      "bytes": 10650
+    },
+    {
+      "path": "requirements-tested.txt",
+      "sha256": "efe1d24ac51353c9d09a8d2e746244834ffedf59900e1606c88d11ab044b504c",
+      "bytes": 521
+    },
+    {
+      "path": "scripts/offline_soak.py",
+      "sha256": "7ad22b7298464287a86e2ce6da70b69752f25f1b52f37d0b52a51a5e613ea3f7",
+      "bytes": 3539
+    },
+    {
+      "path": "src/kwod/__init__.py",
+      "sha256": "d58adac67915f587b453995c5ddf784d1ff25f1b1cc4c8deee1ab1e2d4237d59",
+      "bytes": 100
+    },
+    {
+      "path": "src/kwod/__main__.py",
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+      "bytes": 30
+    },
+    {
+      "path": "src/kwod/accounting.py",
+      "sha256": "5d62670974a1858d3291c732c2c3c12d8f3c04e69bc849d981bb62e3c1edc8a3",
+      "bytes": 10741
+    },
+    {
+      "path": "src/kwod/api.py",
+      "sha256": "27481cb74e63e702f908775139b6586479c9706d244ded848899e65b891873aa",
+      "bytes": 2747
+    },
+    {
+      "path": "src/kwod/auth_capture_signing.py",
+      "sha256": "6cfff6cb514248c6d838e5dcbfb171ff04bf173964d6161d45b513e22a71f105",
+      "bytes": 7667
+    },
+    {
+      "path": "src/kwod/auth_capture.py",
+      "sha256": "28b9074cb8d3211981e11a5ebb2c972c7fb7624058d6bfc4292d38c0e100fe5d",
+      "bytes": 4363
+    },
+    {
+      "path": "src/kwod/backup.py",
+      "sha256": "2b1fafbc9fc36913aa753967b8e2a6ca9e998763b5fc8886e35aba677999c921",
+      "bytes": 5248
+    },
+    {
+      "path": "src/kwod/cli.py",
+      "sha256": "530a7fe4089f4015e876f804292eda16577192723db064086280e7a414f51d06",
+      "bytes": 6742
+    },
+    {
+      "path": "src/kwod/config.py",
+      "sha256": "2d9444f8d00ae65c880e79fcbc1f1755cd8743924f3a557b49d0689eabc783cb",
+      "bytes": 1987
+    },
+    {
+      "path": "src/kwod/context.py",
+      "sha256": "67b71b78ddff9290c27d4fc4d53be0fa1537fe173895c1e78334c8fe90a9fc4a",
+      "bytes": 1386
+    },
+    {
+      "path": "src/kwod/executor.py",
+      "sha256": "b621f3b0bc9a64386dad91650ab8992376d4ee162222ab2806bdc21c755c3de2",
+      "bytes": 4273
+    },
+    {
+      "path": "src/kwod/migrations/001.sql",
+      "sha256": "e4c4ebdab48e78b605ded2765a1e34aae21ba238a822e3273e42dc80bad4ef78",
+      "bytes": 4729
+    },
+    {
+      "path": "src/kwod/migrations/002.sql",
+      "sha256": "9ad305f4b1f0bc429d4f8b1c35ff9ab9011764524b2f92b42287ddf619c0c6d2",
+      "bytes": 553
+    },
+    {
+      "path": "src/kwod/migrations/003.sql",
+      "sha256": "d3b0dd77876e82d73bde9b7fe83c11e3c40bf32e7f26c461955a1c1d427f9594",
+      "bytes": 885
+    },
+    {
+      "path": "src/kwod/payment_relay.py",
+      "sha256": "bf81ff23146a8686ce4b17cb53ed34e790d9be12aae83acde4081380fe990ded",
+      "bytes": 10782
+    },
+    {
+      "path": "src/kwod/payments.py",
+      "sha256": "38ab3800663f246ffeb1ad4fde0cc02ae663078d68673db262a462c24ae6b299",
+      "bytes": 12188
+    },
+    {
+      "path": "src/kwod/projection.py",
+      "sha256": "209dd5273db14d68107d17fe8986799ca39cc541599a2c4eaabb0c470ca319b3",
+      "bytes": 3616
+    },
+    {
+      "path": "src/kwod/provider.py",
+      "sha256": "b8770fe9ee93103392d273295eef2a70e962925e44e67775dd3f45175735ba0f",
+      "bytes": 5703
+    },
+    {
+      "path": "src/kwod/runtime.py",
+      "sha256": "115349640bfbf74a02a74cc5cb9c496b01333ef50f67a882ffad0b05d8cc2fa6",
+      "bytes": 19642
+    },
+    {
+      "path": "src/kwod/static/index.html",
+      "sha256": "7b6e80c1bed0bd570b1d04da0dae099a88b176411d9f13a4e68525f92d392deb",
+      "bytes": 9734
+    },
+    {
+      "path": "src/kwod/store.py",
+      "sha256": "b32612d442f0de2226e87079732dbd928a51939bc02a9c9e14d1794b2948c0dc",
+      "bytes": 5877
+    },
+    {
+      "path": "src/kwod/tools.py",
+      "sha256": "a32bedcc5d203c01d7e2eecd029f38d0c9969096109b40d7c7b5596ac5396b40",
+      "bytes": 7658
+    },
+    {
+      "path": "src/kwod/work_trial.py",
+      "sha256": "eeb9136c7fbd9eef37d7b636800d0a1d96d1e9ab474109691f363b6b80e0f13e",
+      "bytes": 16580
+    },
+    {
+      "path": "tests/test_accounting.py",
+      "sha256": "08a1bcf496ede9966e66c1927b6cf2fc95b99ec7c17294f312a7bc5eb200901a",
+      "bytes": 7135
+    },
+    {
+      "path": "tests/test_api_provider.py",
+      "sha256": "4d2026a2a5db7ecb991f41cb7db4bc87fc0d12d9a63154e564edf81a8f35abd9",
+      "bytes": 6989
+    },
+    {
+      "path": "tests/test_auth_capture_crypto.py",
+      "sha256": "241ceae620ff09aa7ef4ae0eaf9dc168b524db55d35895e78d00bff491994214",
+      "bytes": 2425
+    },
+    {
+      "path": "tests/test_auth_capture_signing.py",
+      "sha256": "708055edb4e87d53faee9129b5e1a6c82ca79371ff26bdb3ee82dd252c572dd1",
+      "bytes": 3670
+    },
+    {
+      "path": "tests/test_auth_capture.py",
+      "sha256": "7b9005ca54a5d90a44fa314e2a8e037e6d8116f6b1bf7313cc349aff9a89cf9e",
+      "bytes": 2404
+    },
+    {
+      "path": "tests/test_checkout_probe.py",
+      "sha256": "6f0ac6290d7ce9305bedf781c6fa8ed780fd1b16cba37236ece02455608de6b6",
+      "bytes": 3207
+    },
+    {
+      "path": "tests/test_cli.py",
+      "sha256": "de3475d04dd383d9fd009e9bbb4094bd5140eb55b374dde07ed7285c3babf1b2",
+      "bytes": 1246
+    },
+    {
+      "path": "tests/test_context_checkpoint.py",
+      "sha256": "3af3e8e5dae18f6cb2bb819444261478fdd27e186c7c0bf5b003fe25a7550887",
+      "bytes": 6551
+    },
+    {
+      "path": "tests/test_deployment.py",
+      "sha256": "9f18943b9db046249c2bdffe10fbfe10ec6967e7e7771a926ac4f7c2015c23d8",
+      "bytes": 2783
+    },
+    {
+      "path": "tests/test_executor_lifecycle.py",
+      "sha256": "36c2bb5a8d05967cb381cd8587db4113f9dea4bdb2bff7a9873f7c57c481f7a1",
+      "bytes": 3232
+    },
+    {
+      "path": "tests/test_linux_executor.py",
+      "sha256": "982f073351ae201cd80ee645134cf9742263134cef90dfb118729ceaeb8e9366",
+      "bytes": 2585
+    },
+    {
+      "path": "tests/test_local_wallet_setup.py",
+      "sha256": "136b1adf580dcf71567bf7aecb3e3a6e392f23aa5bacc9716fb10a7e94f2b76d",
+      "bytes": 1923
+    },
+    {
+      "path": "tests/test_official_comparison.py",
+      "sha256": "4fb97aa8f216c3caa51af103f113cac518f2f25d83a269cfcfa9aca50326c739",
+      "bytes": 2120
+    },
+    {
+      "path": "tests/test_openrouter.py",
+      "sha256": "eb55941fc2464aae00c9d87c206fdaf4d1ae22bb3c18492d484a81005666b5d9",
+      "bytes": 7629
+    },
+    {
+      "path": "tests/test_payment_relay.py",
+      "sha256": "0e179db26a8ad02b6120f0806bad8dbdb20aa69a703b8fc931b37dfcaad05d8b",
+      "bytes": 5197
+    },
+    {
+      "path": "tests/test_payments.py",
+      "sha256": "bb5ac1b28eb586ef30cb2d2fa070ab589f119a84b706e1cd8346a6c85c42fb15",
+      "bytes": 5702
+    },
+    {
+      "path": "tests/test_readiness.py",
+      "sha256": "220e109b0241f9573dab8ecc049fda2892150837ae3762e7c6390cc8738d4174",
+      "bytes": 6336
+    },
+    {
+      "path": "tests/test_runtime.py",
+      "sha256": "c7f21d24821373ec21009ddde0243c7153a0e2a7cc9e5d9bd7bb9eb114e2ed71",
+      "bytes": 12353
+    },
+    {
+      "path": "tests/test_security_backup.py",
+      "sha256": "45a68de15a06d9b55deb089b3634e174b919f38529c8411c234b72b5d2c566da",
+      "bytes": 6453
+    },
+    {
+      "path": "tests/test_wallet_runtime.py",
+      "sha256": "8a437f39b75c1454b165335d0c1bc4e1bf99389766c3ed5174fae848a78ecfd1",
+      "bytes": 1088
+    },
+    {
+      "path": "tests/test_work_trial_launcher.py",
+      "sha256": "db40fe8b76469655b293d10eb347b47780be70f166c0537ece409ab2f6407133",
+      "bytes": 5144
+    },
+    {
+      "path": "tests/test_work_trial.py",
+      "sha256": "6fb46f1cab48f27d9275878d48420940ebc245f0e33ad4d1a6823949a49f6cb0",
+      "bytes": 11045
+    }
+  ],
+  "scope": "Local source, tests, deployment, configuration, fixtures, scripts and original pilot/cost evidence; not an Ubuntu deployment attestation",
+  "recorded_at": "2026-09-16T10:34:59.3553741+02:00"
+}

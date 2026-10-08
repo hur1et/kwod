@@ -1,0 +1,17 @@
+[Unit]
+ConditionPathExists=!/etc/kwod-safety/STOP
+ConditionPathExists=!/etc/kwod-safety/WATCHDOG_PAUSE
+Description=kwod read-only resource balance observations
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/opt/kwod/current/.venv/bin/python -m kwod.assets
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/kwod-assets
+NoNewPrivileges=true
+PrivateTmp=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+UMask=0077

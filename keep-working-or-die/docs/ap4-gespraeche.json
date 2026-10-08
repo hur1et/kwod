@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "status": "prepared_not_started",
+  "contact_authorized": false,
+  "max_conversations": 3,
+  "offer_hypothesis": {"currency": "EUR", "amount": 89, "tested": false},
+  "records": [
+    {"slot": "A", "business": null, "channel": null, "date": null, "problem_example": null, "current_solution": null, "gap": null, "sample_reaction": null, "price_reaction": null, "briefing_willing": null, "decision": null},
+    {"slot": "B", "business": null, "channel": null, "date": null, "problem_example": null, "current_solution": null, "gap": null, "sample_reaction": null, "price_reaction": null, "briefing_willing": null, "decision": null},
+    {"slot": "C", "business": null, "channel": null, "date": null, "problem_example": null, "current_solution": null, "gap": null, "sample_reaction": null, "price_reaction": null, "briefing_willing": null, "decision": null}
+  ],
+  "decision": null,
+  "revenue": {"amount": null, "currency": "EUR", "evidence": null}
+}

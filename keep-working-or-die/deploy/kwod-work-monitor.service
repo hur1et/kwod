@@ -1,0 +1,19 @@
+[Unit]
+Description=KEEP WORKING OR DIE safe work-run metadata collector
+
+[Service]
+Type=oneshot
+User=root
+Group=kwod-public
+ExecStart=/opt/kwod/current/.venv/bin/python -B -m kwod.work_monitor
+TimeoutStartSec=20
+UMask=0027
+PrivateNetwork=true
+RestrictAddressFamilies=AF_UNIX
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+NoNewPrivileges=true
+ReadWritePaths=/var/lib/kwod/public
+InaccessiblePaths=-/etc/kwod -/etc/kwod-openrouter -/var/lib/kwod-signer -/run/kwod-signer -/run/docker.sock -/var/lib/kwod/private -/var/lib/kwod/workspace

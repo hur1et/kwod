@@ -1,0 +1,16 @@
+{
+  "reported_on": "2026-09-16",
+  "source": "user_report_in_conversation",
+  "verification": "not_independently_verified",
+  "currency": "USD",
+  "reported_balance_before": "39.91",
+  "reported_balance_after": "39.60",
+  "derived_pilot02_cost": "0.31",
+  "successful_model_attempts": 5,
+  "derived_average_cost_per_attempt": "0.062",
+  "attribution_condition": "No other account consumption or adjustments during the interval",
+  "trial01_reported_cost": "0.09",
+  "derived_combined_cost": "0.40",
+  "eur_conversion": null,
+  "ledger_debit_created": false
+}

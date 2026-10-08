@@ -1,0 +1,25 @@
+[Unit]
+Description=kwod S5.4 independent network and workload stop guard
+BindsTo=docker.service
+After=docker.service kwod-watchdog.service
+Requires=kwod-watchdog.service
+Before=kwod-production.service
+ConditionPathExists=!/etc/kwod-safety/STOP
+ConditionPathExists=!/etc/kwod-safety/WATCHDOG_PAUSE
+
+[Service]
+Type=notify
+NotifyAccess=all
+User=root
+ExecStart=/opt/kwod/current/.venv/bin/python /opt/kwod/current/deploy/s54_firewall.py
+ExecStopPost=/opt/kwod/current/.venv/bin/python -c "import sys; sys.path.insert(0, '/opt/kwod/current/deploy'); from s54_firewall import stop_containers; stop_containers()"
+Restart=no
+TimeoutStartSec=120
+NoNewPrivileges=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/etc/kwod-s54 /etc/kwod-safety
+InaccessiblePaths=-/etc/kwod-openrouter -/etc/kwod-mail -/var/lib/kwod-signer /var/lib/kwod-production/private
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,27 @@
+[Unit]
+Description=KWOD independent tool-free outgoing mail review
+After=network-online.target
+ConditionPathExists=!/etc/kwod-safety/STOP
+ConditionPathExists=!/etc/kwod-safety/WATCHDOG_PAUSE
+
+[Service]
+User=kwod-safety
+Group=kwod-workspace
+LoadCredential=openrouter.key:/etc/kwod-openrouter/api.key
+RuntimeDirectory=kwod-mail-safety
+RuntimeDirectoryMode=0750
+ExecStart=/opt/kwod/current/.venv/bin/python -m kwod.mail_safety_service
+Restart=on-failure
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+InaccessiblePaths=/etc/kwod-mail /etc/kwod-openrouter /var/lib/kwod /var/lib/kwod-signer
+ReadWritePaths=/run/kwod-mail-safety /var/lib/kwod-safety
+RestrictAddressFamilies=AF_UNIX AF_INET
+MemoryMax=256M
+TasksMax=16
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
